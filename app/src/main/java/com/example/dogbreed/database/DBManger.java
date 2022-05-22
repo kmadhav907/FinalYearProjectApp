@@ -84,15 +84,14 @@ public class DBManger {
                 null, null, null,
                 null, null);
 
-        if (cursor != null) {
-            cursor.moveToFirst();
-            String name = cursor.getString(0);
-            String origin = cursor.getString(1);
-            String height = cursor.getString(2);
-            String weight = cursor.getString(3);
-            String lifeSpan = cursor.getString(4);
-            String temperament = cursor.getString(5);
-            String health = cursor.getString(6);
+        if (cursor != null && cursor.moveToFirst()) {
+            String name = cursor.getString(cursor.getColumnIndex(DatabaseHelper.NAME));
+            String origin = cursor.getString(cursor.getColumnIndex(DatabaseHelper.ORIGIN));
+            String height = cursor.getString(cursor.getColumnIndex(DatabaseHelper.HEIGHT));
+            String weight = cursor.getString(cursor.getColumnIndex(DatabaseHelper.WEIGHT));
+            String lifeSpan = cursor.getString(cursor.getColumnIndex(DatabaseHelper.LIFE_SPAN));
+            String temperament = cursor.getString(cursor.getColumnIndex(DatabaseHelper.TEMPERAMENT));
+            String health = cursor.getString(cursor.getColumnIndex(DatabaseHelper.HEALTH));
             DogData dogData = new DogData(name, origin, height, weight, lifeSpan, temperament, health);
             cursor.close();
             return dogData;

@@ -3,6 +3,8 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/Flutter/DogBreed/app/src/main/res/drawable/ic_launcher_background.xml" value="0.14635416666666667" />
+        <entry key="..\:/Flutter/DogBreed/app/src/main/res/drawable/ic_origin_20dp.xml" value="0.1" />
         <entry key="..\:/Flutter/DogBreed/app/src/main/res/layout/activity_main.xml" value="0.11614583333333334" />
         <entry key="..\:/Flutter/DogBreed/app/src/main/res/layout/content_main.xml" value="0.13020833333333334" />
         <entry key="..\:/Flutter/DogBreed/app/src/main/res/layout/dog_health_issue.xml" value="0.13020833333333334" />

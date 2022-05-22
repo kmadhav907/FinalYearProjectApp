@@ -42,7 +42,7 @@ public class ShareDogData {
         fos.flush();
         fos.close();
 
-        Uri shareImageURI = FileProvider.getUriForFile(activity, "com.rtv313.dogdeck.fileprovider", imageDogShare);
+        Uri shareImageURI = FileProvider.getUriForFile(activity, "com.example.dogbreed.fileprovider", imageDogShare);
         final Intent intent = new Intent(android.content.Intent.ACTION_SEND);
         intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
         intent.putExtra(Intent.EXTRA_STREAM, shareImageURI);
